@@ -23,7 +23,7 @@ Map Data
 Byte Range | Information | Data Type
 ------------- | ------------- | -------------
 0x00 | Block Type | UInt8
-0x01 | Rotation (Unsure) | UInt8
-0x02 | X Position (Unsure) | UInt8
-0x03 | Y Position (Unsure) | UInt8
-0x04 | Z Position (Unsure) | UInt8
+0x01 | Rotation (Unsure) | UInt8, (00 = ↑, 06 = →, 02 = ←, 04 = ↑)
+0x02 | X Position (Unsure) | UInt8 (Increases/Decreases by 2 depending on position)
+0x03 | Y Position (Unsure) | UInt8 (Increases/Decreases by 2 depending on height)
+0x04 | Z Position (Unsure) | UInt8 (Increases/Decreases by 2 depending on position)
