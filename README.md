@@ -12,6 +12,8 @@
    - File is split into sections, indicated by "D:" which are present every 0x100 (up to the custom maps)
 
 # Replay Data
+   - Replays are saved as raw binary files
+
 Byte Range | Information | Data Type
 ------------- | ------------- | -------------
 0x00 - 0x04 | Header (always is "04 00 00 00") | UInt32
