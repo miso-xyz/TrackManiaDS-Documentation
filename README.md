@@ -1,8 +1,25 @@
 # TrackMania DS Documentation
 (if you want me to add anything to the documentation, please message me on Discord or Telegram)
 
+# Rom Information
+   - Most content of the rom is contained in a zip (named "vfs.zip") (the application likely contains an anti-tampering since you cannot load the game with the content of the zip being edited)
+
+# Content Information (present in "vfs.zip")
+   - Script are in compiled LUA, you can check the <a href="https://github.com/miso-xyz/TrackManiaDS-Reversed">TrackManiaDS-Reversed</a> github repository where the decompiled scripts are available
+   - The rest of the content are basic Nitro file
+
 # Global Information about save files
    - File is split into sections, indicated by "D:" which are present every 0x100 (up to the custom maps)
+
+# Replay Data
+Byte Range | Information | Data Type
+------------- | ------------- | -------------
+0x00 - 0x04 | Header (always is "04 00 00 00") | UInt32
+0x04 - 0x08 | Unknown | UInt32
+0x08 - 0x10 | Unknown | UInt16
+0x10 - 0x14 | Always ends in "00 00" | UInt32
+0x14 - 0x18 | Always is "01 00 00 00" | UInt32
+0x18 - 0x22 | Unknown | UInt32
 
 # Custom Map Data
    - Maps (InGame) are 20x20x20 blocks, they're 506 bytes in the save file (Custom maps starts at 0xD00)
